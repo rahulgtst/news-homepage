@@ -1,16 +1,18 @@
-const menu=document.getElementById('menu');
-const navLink=document.getElementsById('navLink');
+const menu=document.querySelector('#menu');
+const navLink=document.getElementById('navLink');
 const body=document.getElementsByName('body');
 
-let isOpen=false;
-
+let open = false;
 
 menu.addEventListener('click',()=>{
-    if(!isOpen){
-        
-        menu.src='./assets/images/close.png';
+    if(open){
+        menu.src = `./assets/images/menu.png`; 
+        navLink.style.display='none';
+        open = false;
     }
     else{
-        menu.src='./assets/images/menu.png';
+        menu.src = `./assets/images/close.png`;
+        navLink.style.display='block';
+        open = true;
     }
 });

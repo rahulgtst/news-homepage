@@ -16,6 +16,14 @@ nav{
     margin: 5vh 0;
 }
 
+#navLink>li{
+    list-style: none;
+}
+
+.active{
+    display: block;
+}
+
 #logo,#menu{
     height: 5vh;
     width: auto;
@@ -52,7 +60,7 @@ img{
 
 main>section>article{
     box-sizing: border-box;
-    width: 50vw;
+    width: 55vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,7 +73,7 @@ main>section>article>h1{
     font-size: 48px;
     font-weight: bold;
     width: 20vw;
-    line-height: 0.9;
+    line-height: 0.8;
     margin-right: 5vw;
     margin-bottom: 5vh;
 }
@@ -83,7 +91,8 @@ main>section>article>p>button{
     color: white;
     letter-spacing: 1px;
     background-color: hsl(5, 85%, 63%);
-    margin-top: 5vh;
+    margin-top: 2vh;
+    border: none;
 }
 
 main>aside{
@@ -122,7 +131,7 @@ main>aside>hr{
 }
 
 main>aside>article>p{
-    font-size: 12px;
+    font-size: 14px;
     color: hsl(233, 8%, 79%);
 }
 
@@ -184,7 +193,8 @@ main>aside>article>p{
         display: block;
         z-index: 1;
     }
-    ul{
+    
+    #navLink{
         flex-direction: column;
         padding: 15vh 0 ;
         height: 100vh;
@@ -204,11 +214,12 @@ main>aside>article>p{
     }
     main{
         flex-direction: column;
-        margin: 2vh 5vw;
+        margin: 0 5vw;
+        margin-bottom: 12vh;
         width: 90vw;
         box-sizing: border-box;
-        height: 180vh;
-    }    
+        height: 140vh;
+    }
     img{
         height: 40vh;
         width: 90vw;
@@ -221,7 +232,7 @@ main>aside>article>p{
     }
     main>section>article>h1{
         width: 100%;
-        margin: 0;
+        margin: 2vh 0;
     }
     main>section>article>p{
         width: 100%;
